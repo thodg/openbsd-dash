@@ -18,6 +18,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += ${COMPILER_LIBCXX} event m
 
+BUILD_DEPENDS+=	devel/automake/1.14
+
 COMPILER = ports-gcc
 
 CONFIGURE_STYLE =	gnu
@@ -29,7 +31,7 @@ CONFIGURE_ARGS =	--with-gui=no \
 			CC=egcc CXX=eg++
 
 MAKE_ENV =		AUTOCONF_VERSION=2.69 \
-			AUTOMAKE_VERSION=1.15
+			AUTOMAKE_VERSION=1.14
 
 USE_GMAKE = Yes
 
