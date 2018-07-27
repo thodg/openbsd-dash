@@ -25,6 +25,8 @@ COMPILER = ports-gcc
 CONFIGURE_STYLE =	gnu
 
 CONFIGURE_ARGS =	--with-gui=no \
+			--with-system-univalue \
+			--with-system-secp256k1 \
 			--with-unsupported-ssl \
 			CXXFLAGS="-O2 -pipe -I/usr/local/include/db4.8 -I/usr/local/include" \
 			LIBS="-L/usr/local/lib/db4.8 -ldb_cxx-4.8" \
