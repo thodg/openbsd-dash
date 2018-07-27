@@ -1,0 +1,14 @@
+@comment $OpenBSD$
+@bin bin/bench_dash
+@bin bin/dash-cli
+@bin bin/dash-tx
+@bin bin/dashd
+@bin bin/test_dash
+include/dashconsensus.h
+lib/libdashconsensus.a
+lib/libdashconsensus.la
+@lib lib/libdashconsensus.so.${LIBdashconsensus_VERSION}
+lib/pkgconfig/libdashconsensus.pc
+@man man/man1/dash-cli.1
+@man man/man1/dash-tx.1
+@man man/man1/dashd.1
