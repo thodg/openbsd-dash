@@ -1,0 +1,12 @@
+diff --git a/src/compat.h b/src/compat.h
+index 2e9663b8d..7206bce9e 100644
+--- src/compat.h.orig
++++ src/compat.h
+@@ -45,6 +45,7 @@
+ #include <limits.h>
+ #include <netdb.h>
+ #include <unistd.h>
++#include <sys/select.h>
+ #endif
+ 
+ #ifdef WIN32
