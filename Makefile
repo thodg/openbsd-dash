@@ -16,6 +16,8 @@ MAINTAINER =	Thomas de Grivel <thoxdg@gmail.com>
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
+SHARED_LIBS+=	dashconsensus 0.0
+
 WANTLIB += ${COMPILER_LIBCXX} event m
 
 BUILD_DEPENDS+=	devel/automake/1.14
