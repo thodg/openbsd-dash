@@ -18,7 +18,13 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 SHARED_LIBS+=	dashconsensus 0.0
 
+LIB_DEPENDS+=	devel/boost
+LIB_DEPENDS+=	coin/bitcoin
 WANTLIB += ${COMPILER_LIBCXX} event m
+WANTLIB += boost_system-mt boost_filesystem-mt boost_program_options-mt
+WANTLIB += boost_thread-mt boost_chrono-mt
+WANTLIB += secp256k1 univalue
+WANTLIB += ssl crypto
 
 BUILD_DEPENDS+=	devel/automake/1.14
 
