@@ -1,0 +1,12 @@
+#!/bin/ksh
+#
+# $OpenBSD: $
+
+daemon="/usr/local/bin/dashd"
+daemon_flags="-daemon -datadir=/var/dash/.dashcore -dbcache=10 -maxmempool=10"
+daemon_timeout=600
+daemon_user=_dashd
+
+. /etc/rc.d/rc.subr
+
+rc_cmd $1

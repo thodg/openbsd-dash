@@ -1,4 +1,6 @@
 @comment $OpenBSD$
+@newgroup _dashd:901
+@newuser _dashd:901:901:daemon:Dash Daemon:/var/dash:/bin/ksh
 @bin bin/bench_dash
 @bin bin/dash-cli
 @bin bin/dash-tx
@@ -12,3 +14,5 @@ lib/pkgconfig/libdashconsensus.pc
 @man man/man1/dash-cli.1
 @man man/man1/dash-tx.1
 @man man/man1/dashd.1
+@sample /var/dash/
+@rcscript ${RCDIR}/dashd
