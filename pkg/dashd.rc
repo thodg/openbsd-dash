@@ -3,7 +3,7 @@
 # $OpenBSD: $
 
 daemon="/usr/local/bin/dashd"
-daemon_flags="-daemon -datadir=/var/dash/.dashcore -dbcache=10 -maxmempool=10"
+daemon_flags="-daemon -datadir=/var/dash/.dashcore -dbcache=100 -maxmempool=100"
 daemon_timeout=600
 daemon_user=_dashd
 
